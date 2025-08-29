@@ -11,7 +11,6 @@ async function bootstrap() {
       port: 6379,
     },
   });
-
   await app.listen();
   console.log('Auth Microservice is running');
 }

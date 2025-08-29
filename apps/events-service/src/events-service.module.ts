@@ -37,6 +37,14 @@ import { ClientsModule, Transport } from '@nestjs/microservices';
           port: 6379,
         },
       },
+       {
+        name: 'GATEWAY_SERVICE',
+        transport: Transport.REDIS,
+        options: {
+          host: 'localhost',
+          port: 6379,
+        },
+      },
     ]),
   ],
   controllers: [EventsController],

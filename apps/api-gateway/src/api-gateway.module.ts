@@ -7,6 +7,8 @@ import { AuthController } from './controllers/auth.controller';
 import { UsersController } from './controllers/users.controller';
 import { FriendsController } from './controllers/friends.controller';
 import { EventsController } from './controllers/events.controller';
+import { SocketGateway } from './sockets/socket.gateway';
+import { SocketEventsListener } from './sockets/socket-events.listener';
 
 @Module({
   imports: [
@@ -47,6 +49,6 @@ import { EventsController } from './controllers/events.controller';
     ]),
   ],
   controllers: [AuthController, UsersController, FriendsController, EventsController],
-  providers: [ApiGatewayService],
+  providers: [ApiGatewayService,SocketGateway, SocketEventsListener],
 })
 export class ApiGatewayModule {}
