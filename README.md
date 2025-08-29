@@ -72,23 +72,18 @@ Run the services individually in separate terminals:
 
 ```bash
 # API Gateway
-cd api-gateway
 nest start api-gateway --watch
 
 # Auth Service
-cd auth-service
 nest start auth-service --watch
 
 # User Service
-cd user-service
 nest start user-service --watch
 
 # Event Service
-cd event-service
 nest start event-service --watch
 
 # Friend Service
-cd friend-service
 nest start friend-service --watch
 ```
 
